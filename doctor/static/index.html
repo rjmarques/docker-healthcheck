@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <base href=".">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- my own css rules -->
+    <link rel="stylesheet" href="./app.css">
+
+    <title>Docker Healthcheck</title>
+  </head>
+  <body>
+    <main>
+        <h1>Docker Healthcheck 🩺</h1>
+        <div id="hero_img">
+            <img src="assets/docker_fire.jpg" alt="let it burn!">
+        </div>
+        <div class="metrics">
+            <ul>
+                <label>Status</label>
+                <div id="status"><span></span></div>
+                <label>CPU Burn</label>
+                <div id="burning"><span></span></div>
+                <label>Mean Timming</label>
+                <div id="mean_timming"><span></span></div>
+                <label>Last Timming</label>
+                <div id="last_timming"><span></span></div>
+            </ul>            
+        </div>
+        <div id="prognosis"></div>
+        <div class="controls">
+            <button type="button" class="btn btn-success" onclick="stopBurn()">Stop the Burn</button>
+            <button type="button" class="btn btn-danger" onclick="startBurn()">Start Burning CPU</button>
+        </div>
+    </main>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./app.js"></script>
+
+    <footer>
+        <a href="https://twitter.com/mathewmerrick/status/922300850512437248/photo/1">image credits</a>
+        <a href="https://github.com/rjmarques">Developed By</a>
+    </footer>
+  </body>
+</html>

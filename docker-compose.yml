@@ -1,0 +1,14 @@
+services:
+  doctor:
+    build: ./doctor
+    container_name: doctor
+    ports:
+      - 8080:8080
+    volumes:
+      -  /var/run/docker.sock:/var/run/docker.sock
+    links:
+      - patient
+  patient:
+    build: ./patient
+    container_name: patient
+    cpuset: "0"
