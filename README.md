@@ -64,4 +64,4 @@ However, Docker only saves the last 5 healthchecks so something that fetches hea
 
 ## Disclaimer
 
-This project should _NOT_ be used in a PRODUCTION environments whitout many significant improvements. The project was mostly a PoC, developed in a few hours, and so many decisions were made to simplify things, making them more britle.
+This project should _NOT_ be used in a PRODUCTION environment whitout significant improvements. The project was mostly a PoC, developed in a few hours, and so many decisions were made to simplify things, making them more britle.
